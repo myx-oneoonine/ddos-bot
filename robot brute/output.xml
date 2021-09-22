@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190821 17:43:32.190" generator="Robot 3.1.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/myx/Desktop/robot brute/fakyaman.robot" id="s1" name="Fakyaman">
+<test id="s1-t1" name="Goto c4c">
+<kw name="Open Login Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://c4c.dev.gotham.buk0.com/lead-form?utm_source=CHECKRAKA&amp;utm_medium=BANNER&amp;utm_campaign=CHECKRAKA_Campaign&amp;utm_product=C4C</arg>
+</arguments>
+<msg timestamp="20190821 17:43:32.514" level="INFO">Opening browser 'firefox' to base url 'https://c4c.dev.gotham.buk0.com/lead-form?utm_source=CHECKRAKA&amp;utm_medium=BANNER&amp;utm_campaign=CHECKRAKA_Campaign&amp;utm_product=C4C'.</msg>
+<status status="PASS" endtime="20190821 17:43:41.036" starttime="20190821 17:43:32.514"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>full-name-input</arg>
+<arg>ยิงมา นะครับ</arg>
+</arguments>
+<msg timestamp="20190821 17:43:41.042" level="INFO">Typing text 'ยิงมา นะครับ' into text field 'full-name-input'.</msg>
+<status status="PASS" endtime="20190821 17:43:41.175" starttime="20190821 17:43:41.039"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile-number-input</arg>
+<arg>0888888888</arg>
+</arguments>
+<msg timestamp="20190821 17:43:41.175" level="INFO">Typing text '0888888888' into text field 'mobile-number-input'.</msg>
+<status status="PASS" endtime="20190821 17:43:41.243" starttime="20190821 17:43:41.175"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>province-selection</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20190821 17:43:41.244" level="INFO">Selecting options from selection list 'province-selection' by index 1.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190821 17:43:41.529" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190821 17:43:41.529" starttime="20190821 17:43:41.298"></status>
+</kw>
+<msg timestamp="20190821 17:43:41.534" level="FAIL">List with locator 'province-selection' not found.</msg>
+<status status="FAIL" endtime="20190821 17:43:41.534" starttime="20190821 17:43:41.244"></status>
+</kw>
+<status status="FAIL" endtime="20190821 17:43:41.535" starttime="20190821 17:43:32.513"></status>
+</kw>
+<status status="FAIL" endtime="20190821 17:43:41.535" critical="yes" starttime="20190821 17:43:32.512">List with locator 'province-selection' not found.</status>
+</test>
+<status status="FAIL" endtime="20190821 17:43:41.536" starttime="20190821 17:43:32.193"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Fakyaman" pass="0">Fakyaman</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
